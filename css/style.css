@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.navbar {
+    height: 108px;
+    background-color: #FFF !important;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarDiv {
+    position: relative;
+    width: 98vw;
+}
+
+.navbar-brand {
+    width: 114.55px;
+    height: 48px;
+    left: 64px;
+    align-self: center;
+}
+
+#brandLogo {
+    position: absolute;
+    height: 42px;
+}
+
+#brandName {
+    float: right;
+    width: 62.18px;
+    height: 48px;
+    background: url("../assets/BrandName.png");
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 272px;
+}
+
+.nav-link {
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navBtn {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+#signUp {
+    background-color: #F53855;
+    color: #FFF;
+}
+
+.btn {
+    border-radius: 9px;
+}
+
+.jumbotron {
+    background-color: #FFF;
+    width: 681px;
+    position: relative;
+}
+
+#jumboLogo {
+    height: 55px;
+    width: 50px;
+    left: 27.52%;
+    right: 68.66%;
+    top: 35.55%;
+    bottom: 59.53%;
+}
+
+label {
+    font-weight: 600;
+}
+
+#forgotPassword {
+    font-weight: 600;
+    padding: 16px 24px;
+    height: 51px;
+    width: 187px;
+    font-size: 16px;
+}
+
+#logIn {
+    background-color: #F53855;
+    font-weight: 600;
+    height: 51px;
+    width: 187px;
+    font-size: 16px;
+}
+
+#register {
+    background-color: #F53855;
+    font-weight: 600;
+    height: 51px;
+    width: 187px;
+    font-size: 16px;
+}
+
+#logInText {
+    height: 16px;
+}
+
+#already {
+    font-weight: 600;
+}
+
+#success {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 108px);
+    top: 108px;
+
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+}
+
+#alertCont {
+    position: absolute;
+    left: calc(50vw - 250px);
+    top: calc(50vh - 90px);
+    z-index: 2;
+}
+
+.alert {
+    background-color: #FFF;
+    height: 179px;
+    width: 500px;
+    border-radius: 9px;
+}
+
+.btn-secondary {
+    border-radius: 4px !important;
+}
+
+h6 {
+    font-weight: 600;
+}
+
+#xButton {
+    position: absolute;
+    right: 22.5px;
+}
+
+.hero {
+    background-color: #FFF;
+    position: relative;
+    top:108px;
+    height: calc(100vh - 138px);
+}
+
+#contact {
+    position: relative;
+    height: 138px;
+    width: 100vw;
+    font-size: 13px;
+}
+
+#clock {
+    margin-left: 60px;
+    height: 33px;
+}
+
+#phone {
+    height: 30px;
+}
+
+#socialMedia {
+    margin-right: 118px;
+}
+
+.socialIcon {
+    height: 34px;
+}
+
+.subTitle {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 32px;
+    color: #F53855;
+}
+
+.page {
+    background-color: #FFF;
+}
+
+.pizzas {
+    width: 260px;
+    height: 260px;
+    background-color: #FFF;
+}
+
+#pizzaCont {
+    width: 621px;
+    height: 627px;
+}
+
+.height {
+    height: 890px;
+}

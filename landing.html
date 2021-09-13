@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Landing Page</title>
+</head>
+<body class="bg-light">
+        <div class="flex-row">
+            <nav class="navbar w-100 fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="navbarDiv container-fluid px-5">
+                    <div class="navbar-brand p-0" href="#">
+                        <img id="brandLogo" src="assets/BrandLogo.svg"/>
+                        <div id="brandName"></div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                Food Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                Reviews
+                            </a>
+                        </li>
+                    </ul>
+                    <form>
+                        <a id="signUp" class="btn navBtn p-3" role="button" href="signUp.html">Sign Up</a>
+                        <button id="signIn" class="btn navBtn btn-light border border-muted p-3 ml-1 text-dark" type="submit">Sign In</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="row hero d-flex align-items-center">
+            <div class="container-fluid w-75"></div>
+                <div class="row w-100 mx-auto">
+                    <div class="col-6 align-self-center">
+                        <p class="subTitle text-left">Try our fresh</p>
+                        <h1 class="mb-3 mt-4">WAGYU STEAK</h1>
+                        <p class="text-left text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra netus scelerisque faucibus nunc, elit morbi. Odio amet, ipsum vehicula massa amet id eget odio. Nibh fermentum, amet lacus, faucibus nisl non id varius. Lectus magna feugiat integer proin sem.</p>
+                        <button id="signUp" class="btn px-4 py-2 text-light">Order Now</button>
+                        <button class="btn btn-light ml-2 px-4 py-2 border border-muted">Book Table</button>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/Steak.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="flex-row d-flex align-items-center bg-light">
+            <img id="clock" src="assets/Clock.svg"/>
+            <div class="pl-3">
+                <p class="font-weight-bold mb-0">OPEN HOURS</p>
+                <p class="font-weight-light my-0">10.30 - 23.00</p>
+            </div>
+            <img id="phone" class="pl-5" src="assets/Phone.svg"/>
+            <div class="pl-3">
+                <p class="font-weight-bold mb-0">PHONE</p>
+                <p class="font-weight-light my-0">+381 60 25125</p>
+            </div>
+            <div id="socialMedia" class="ml-auto">
+                <img class="socialIcon mr-4" src="assets/Facebook.svg">
+                <img class="socialIcon mr-4" src="assets/Instagram.svg">
+                <img class="socialIcon mr-4" src="assets/LinkedIn.svg">
+                <img class="socialIcon" src="assets/Twitter.svg">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center height page align-items-center">
+
+        </div>
+        <div class="row d-flex justify-content-center height bg-light align-items-center">
+            <div class="container-fluid w-75">
+                <div class="row w-100 mx-auto">
+                    <div class="col-6 align-self-center">
+                        <span class="badge badge-pill badge-warning">New</span>
+                        <p class="subTitle text-left">Let’s Have a Pizza Party!</p>
+                        <p class="text-left text-muted">Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature.</p>
+                        <button id="signUp" class="btn px-4 py-2 text-light">Find out more</button>
+                    </div>
+                    <div id="pizzaCont" class="col-6 d-flex">
+                        <div class="row ml-5">
+                            <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
+                                <img src="assets/Pepperoni-removebg-preview 1.png">
+                            </div>
+                            <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
+                                <img src="assets/Pepperoni-removebg-preview 3.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
+                                <img src="assets/Pepperoni-removebg-preview 2.png">
+                            </div>
+                            <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
+                                <img src="assets/Pepperoni-removebg-preview 4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
