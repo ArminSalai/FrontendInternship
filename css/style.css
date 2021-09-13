@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
 *, html {
     margin: 0;
@@ -32,12 +32,10 @@ body {
 }
 
 #brandLogo {
-    position: absolute;
     height: 42px;
 }
 
 #brandName {
-    float: right;
     width: 62.18px;
     height: 48px;
     background: url("../assets/BrandName.png");
@@ -160,9 +158,6 @@ h6 {
 
 .hero {
     background-color: #FFF;
-    position: relative;
-    top:108px;
-    height: calc(100vh - 138px);
 }
 
 #contact {
@@ -220,4 +215,25 @@ h1 {
 
 .height {
     height: 890px;
+}
+
+.third {
+    width: 100%;
+    max-width: 354px;
+}
+
+.useful {
+    height: 596px;
+    background-color: #FFF;
+}
+
+.usefulCont {
+    width: 726px;
+    height: 340px;
+}
+
+footer {
+    background-color: #151515;
+    height: 553px;
+    font-family: 'Roboto';
 }
