@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Log In</title>
+</head>
+<body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbarDiv container-fluid px-5">
+                <div class="col text-left justify-content-center">
+                    <div class="row">
+                        <img id="brandLogo" src="assets/BrandLogo.svg"/>
+                        <div class="ml-2" id="brandName"></div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            Food Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            Reviews
+                        </a>
+                    </li>
+                </ul>
+                <form class="ml-auto">
+                    <a href="checkout.html" class="d-flex float-left mr-3">
+                        <img src="assets/ShoppingCart.svg"/>
+                        <div id="counter" class="span badge badge-pill text-light">0</div>
+                    </a>
+                    <div class="d-flex float-right align-items-center">
+                        <img src="assets/ProfilePic.png">
+                        <p class="text-dark m-0 ml-3">Mark S.</p>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container w-100 mt-5">
+            <div class="row w-100 d-flex justify-content-between">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-light">
+                      <li class="breadcrumb-item"><a class="home" href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Food Menu</li>
+                    </ol>
+                </nav>
+                <input type="text" id="search" class="form-control" placeholder="Search Products">
+            </div>
+            <div class="row w-100 d-inline d-lg-flex">
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic2.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Burnt Ribs</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic3.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">King's Burger</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic4.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Cheese Burger</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic5.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Meat Potato</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row w-100 d-inline d-lg-flex">
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic6.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Crispy Bacon</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic7.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Outdoor Speciality</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic8.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Grill-o-meat</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-10 col-lg-3 mt-4 mx-auto">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/ProductPic9.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Cooked meat</h5>
+                          <p class="card-text">Some quick example text to build on the card title and</p>
+                          <a href="productsShopImagePreview.html" class="btn btn-light border-muted btnHeight py-auto px-3 align-items-center d-flex float-left"><img src="assets/eye 1.svg"></a>
+                          <a href="productsShopSelectQuantity.html" id="logIn" class="btn text-light d-flex align-items-center float-right justify-content-center btnHeight">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row w-100 d-flex justify-content-end mt-3">
+                <nav aria-label="Page navigation example d-flex align-self-end ml-auto">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link text-muted" href="#">Prev</a></li>
+                      <li class="page-item"><a class="page-link redBG text-light" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link home" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link home" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link  home" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/count.js"></script>
+</body>
+</html>

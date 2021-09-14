@@ -9,6 +9,7 @@
 body {
     height: 100vh;
     font-family: 'Inter';
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -70,8 +71,10 @@ body {
 
 .jumbotron {
     background-color: #FFF;
-    width: 681px;
+    width: 40vw;
     position: relative;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 #jumboLogo {
@@ -91,7 +94,7 @@ label {
     font-weight: 600;
     padding: 16px 24px;
     height: 51px;
-    width: 187px;
+    width: 60%;
     font-size: 16px;
 }
 
@@ -99,7 +102,15 @@ label {
     background-color: #F53855;
     font-weight: 600;
     height: 51px;
-    width: 187px;
+    width: 60%;
+    font-size: 16px;
+}
+
+#addIt {
+    background-color: #F53855;
+    font-weight: 600;
+    height: 51px;
+    width: 60%;
     font-size: 16px;
 }
 
@@ -122,11 +133,22 @@ label {
 #success {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 108px);
+    height: calc(100% - 108px);
     top: 108px;
 
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(6px);
+}
+
+.black::before {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0, 0.8);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
 }
 
 #alertCont {
@@ -136,11 +158,53 @@ label {
     z-index: 2;
 }
 
+#alertCont2 {
+    position: absolute;
+    left: calc(50vw - 20vw);
+    top: calc(50vh - 15vh);
+    z-index: 3;
+    width: 40vw;
+    height: 320px;
+    margin: auto;
+}
+
+#bigImgCont {
+    width: 50%;
+    height: 612px;
+    background-size: cover;
+    position: absolute;
+    left: calc(50vw - 25%);
+    top: calc(50vh - 306px);
+    background-image: url("../assets/BigImg.png");
+    z-index: 3;
+}
+
+#quit {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 30px;
+    height: 30px;
+}
+
+#quit2 {
+    position: absolute;
+    right: -38px;
+    top: -36px;
+    width: 30px;
+    height: 30px;
+}
+
 .alert {
     background-color: #FFF;
     height: 179px;
     width: 500px;
     border-radius: 9px;
+}
+
+.input-group {
+    width: max-content;
+    height: 50px;
 }
 
 .btn-secondary {
@@ -163,7 +227,6 @@ h6 {
 #contact {
     position: relative;
     height: 138px;
-    width: 100vw;
     font-size: 13px;
 }
 
@@ -236,4 +299,47 @@ footer {
     background-color: #151515;
     height: 553px;
     font-family: 'Roboto';
+}
+
+.footerTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    /* identical to box height, or 133% */
+
+    /* White */
+    color: #FFFFFF;
+}
+
+#instagramCont {
+    width: 294px;
+}
+
+#counter {
+    height: 16px;
+    background-color: #F53855;
+    font-size: 10px;
+}
+
+.home {
+    color: #F53855;
+}
+
+#search {
+    width: 15vw;
+}
+
+.btnHeight {
+    height: 50px;
+}
+
+.redBG {
+    background-color: #F53855;
+}
+
+.card-title {
+    font-weight: 800;
 }
