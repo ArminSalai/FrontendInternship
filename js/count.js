@@ -1,5 +1,5 @@
-let count = parseInt(document.cookie.slice(";")[0]);
-if(typeof count != "number") count = 0;
+let count = tryParseInt(document.cookie.slice(";")[0]);
+if((typeof count != "number") && document.cookie == "") count = 0;
 document.querySelector("#counter").innerHTML = count;
 let minus = document.querySelector("#minus");
 let plus = document.querySelector("#plus");
