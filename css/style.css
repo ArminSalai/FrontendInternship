@@ -12,24 +12,16 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    height: 108px;
-    background-color: #FFF !important;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.bg-white {
+    background-color: #FFF;
 }
 
-.navbarDiv {
-    position: relative;
-    width: 98vw;
+.btn-theme {
+    background-color: #F53855;
 }
 
-.navbar-brand {
-    width: 114.55px;
-    height: 48px;
-    left: 64px;
-    align-self: center;
+.btn-theme:hover {
+    background-color: #d63149;
 }
 
 #brandLogo {
@@ -42,102 +34,19 @@ body {
     background: url("../assets/BrandName.png");
 }
 
-.navbar-nav {
-    position: absolute;
-    left: 272px;
-}
-
-.nav-link {
-    font-size: 18px;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.navBtn {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-}
-
-#signUp {
-    background-color: #F53855;
-    color: #FFF;
-}
-
-.btn {
+.rounded-9 {
     border-radius: 9px;
 }
 
 .jumbotron {
     background-color: #FFF;
-    width: 40vw;
-    position: relative;
+    width: 35vw;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
 
-#jumboLogo {
-    height: 55px;
-    width: 50px;
-    left: 27.52%;
-    right: 68.66%;
-    top: 35.55%;
-    bottom: 59.53%;
-}
-
 label {
     font-weight: 600;
-}
-
-#forgotPassword {
-    font-weight: 600;
-    padding: 16px 24px;
-    height: 51px;
-    width: 60%;
-    font-size: 16px;
-}
-
-#logIn {
-    background-color: #F53855;
-    font-weight: 600;
-    height: 51px;
-    width: 60%;
-    font-size: 16px;
-}
-
-#addIt {
-    background-color: #F53855;
-    font-weight: 600;
-    height: 51px;
-    width: 60%;
-    font-size: 16px;
-}
-
-#register {
-    background-color: #F53855;
-    font-weight: 600;
-    height: 51px;
-    width: 187px;
-    font-size: 16px;
-}
-
-#logInText {
-    height: 16px;
-}
-
-#already {
-    font-weight: 600;
-}
-
-#success {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 108px);
-    top: 108px;
-
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(6px);
 }
 
 .black::before {
@@ -151,14 +60,15 @@ label {
     z-index: 2;
 }
 
-#alertCont {
+#alertCenter {
     position: absolute;
-    left: calc(50vw - 250px);
+    left: calc(50vw - 15vw);
     top: calc(50vh - 90px);
     z-index: 2;
+    width: 30vw;
 }
 
-#alertCont2 {
+#alertCenter2 {
     position: absolute;
     left: calc(50vw - 20vw);
     top: calc(50vh - 15vh);
@@ -179,6 +89,18 @@ label {
     z-index: 3;
 }
 
+.m-navbar {
+    margin-top: 108px !important;
+}
+
+.badge {
+    font-size: 10px;
+}
+
+.bolder {
+    font-weight: 500;
+}
+
 #quit {
     position: absolute;
     right: -16px;
@@ -195,43 +117,17 @@ label {
     height: 30px;
 }
 
-.alert {
-    background-color: #FFF;
-    height: 179px;
-    width: 500px;
-    border-radius: 9px;
-}
-
 .input-group {
     width: max-content;
     height: 50px;
 }
 
-.btn-secondary {
-    border-radius: 4px !important;
-}
-
-h6 {
-    font-weight: 600;
-}
-
-#xButton {
-    position: absolute;
-    right: 22.5px;
-}
-
-.hero {
-    background-color: #FFF;
-}
-
 #contact {
-    position: relative;
     height: 138px;
     font-size: 13px;
 }
 
 #clock {
-    margin-left: 60px;
     height: 33px;
 }
 
@@ -252,12 +148,11 @@ h6 {
     font-size: 32px;
 }
 
-h1 {
+.title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 80px;
-    line-height: 32px;
     color: #F53855;
 }
 
@@ -265,19 +160,23 @@ h1 {
     background-color: #FFF;
 }
 
-.pizzas {
-    width: 260px;
-    height: 260px;
-    background-color: #FFF;
-}
-
 #pizzaCont {
-    width: 621px;
-    height: 627px;
+    max-width: 621px;
+    max-height: 627px;
 }
 
-.height {
-    height: 890px;
+.pizzas {
+    width: 80%;
+    height: 0;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    background-color: #FFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.page-height {
+    min-height: 890px;
 }
 
 .third {
@@ -285,9 +184,8 @@ h1 {
     max-width: 354px;
 }
 
-.useful {
-    height: 596px;
-    background-color: #FFF;
+#useful {
+    min-height: 596px;
 }
 
 .usefulCont {
@@ -297,21 +195,22 @@ h1 {
 
 footer {
     background-color: #151515;
-    height: 553px;
+    min-height: 553px;
     font-family: 'Roboto';
 }
 
-.footerTitle {
+.footer-title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 32px;
 
-    /* identical to box height, or 133% */
-
-    /* White */
     color: #FFFFFF;
+}
+
+.important-links {
+    line-height: 40px;
+    font-size: 18px;
 }
 
 #instagramCont {

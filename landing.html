@@ -9,204 +9,201 @@
     <title>Landing Page</title>
 </head>
 <body class="bg-light">
-        <div class="flex-row">
-            <nav class="navbar w-100 fixed-top navbar-expand-lg navbar-light bg-light">
-                <div class="navbarDiv container-fluid px-5">
-                    <div class="col text-left justify-content-center">
-                        <div class="row">
-                            <img id="brandLogo" src="assets/BrandLogo.svg"/>
-                            <div class="ml-2" id="brandName"></div>
-                        </div>
-                    </div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                Food Menu
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                Reviews
-                            </a>
-                        </li>
-                    </ul>
-                    <form>
-                        <a id="signUp" class="btn navBtn p-3" role="button" href="signUp.html">Sign Up</a>
-                        <button id="signIn" class="btn navBtn btn-light border border-muted p-3 ml-1 text-dark" type="submit">Sign In</button>
-                    </form>
-                </div>
-            </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white d-flex">
+        <a class="navbar-brand d-flex ml-5 py-4" href="#">
+            <img id="brandLogo" src="assets/BrandLogo.svg"/>
+            <div class="ml-2" id="brandName"></div>
+        </a>
+        <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        Food Menu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        Reviews
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline ml-lg-auto mr-5 mt-3 mt-lg-0">
+                <a class="btn btn-theme px-4 py-3 mr-3 text-light rounded-9" role="button" href="signUp.html">Sign Up</a>
+                <button class="btn btn-light border border-muted px-4 py-3 rounded-9" type="submit">Sign In</button>
+            </form>
         </div>
-        <div class="row m-0 d-flex justify-content-center height hero align-items-center">
-            <div class="container-fluid w-75">
-                <div class="row w-100 mx-auto">
-                    <div class="col-6 align-self-center">
-                        <p class="subTitle text-left">Try our fresh</p>
-                        <h1 class="mb-3 mt-4">WAGYU STEAK</h1>
-                        <p class="text-left text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra netus scelerisque faucibus nunc, elit morbi. Odio amet, ipsum vehicula massa amet id eget odio. Nibh fermentum, amet lacus, faucibus nisl non id varius. Lectus magna feugiat integer proin sem.</p>
-                        <a id="signUp" href="productsShop.html" class="btn px-4 py-2 text-light">Order Now</a>
-                        <button class="btn btn-light ml-2 px-4 py-2 border border-muted">Book Table</button>
-                    </div>
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                        <img src="assets/Steak.png"/>
-                    </div>
+        <button class="navbar-toggler ml-auto mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="row m-0 d-flex justify-content-center page-height bg-white align-items-center m-navbar overflow-hidden">
+        <div class="container-flex w-75">
+            <div class="row d-inline d-xl-flex">
+                <div class="col-xl-6 order-lg-first align-items-center m-auto">
+                    <p class="subTitle text-left">Try our fresh</p>
+                    <h1 class="mb-3 mt-4 title">WAGYU STEAK</h1>
+                    <p class="text-left text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra netus scelerisque faucibus nunc, elit morbi. Odio amet, ipsum vehicula massa amet id eget odio. Nibh fermentum, amet lacus, faucibus nisl non id varius. Lectus magna feugiat integer proin sem.</p>
+                    <a href="productsShop.html" class="btn btn-theme px-4 py-2 text-light mt-4">Order Now</a>
+                    <button class="btn btn-light ml-2 px-4 py-2 border border-muted mt-4">Book Table</button>
+                </div>
+                <div class="col-xl-6 py-5 py-xl-0 d-flex align-items-center m-auto">
+                    <img class="img-fluid" src="assets/Steak.png"/>
                 </div>
             </div>
         </div>
-        <div id="contact" class="row m-0 d-flex align-items-center bg-light">
-            <img id="clock" src="assets/Clock.svg"/>
-            <div class="pl-3">
-                <p class="font-weight-bold mb-0">OPEN HOURS</p>
-                <p class="font-weight-light my-0">10.30 - 23.00</p>
-            </div>
-            <img id="phone" class="pl-5" src="assets/Phone.svg"/>
-            <div class="pl-3">
-                <p class="font-weight-bold mb-0">PHONE</p>
-                <p class="font-weight-light my-0">+381 60 25125</p>
-            </div>
-            <div id="socialMedia" class="ml-auto">
-                <img class="socialIcon mr-4" src="assets/Facebook.svg">
-                <img class="socialIcon mr-4" src="assets/Instagram.svg">
-                <img class="socialIcon mr-4" src="assets/LinkedIn.svg">
-                <img class="socialIcon" src="assets/Twitter.svg">
-            </div>
-        </div>
-        <div class="row m-0 d-flex justify-content-center height page align-items-center">
-            <div class="container-fluid px-0 w-75">
-                <span class="badge badge-pill badge-warning">WHY US?</span>
-                <p class="subTitle">Fresh and Hand-picked Ingredients</p>
-                <p class="text-muted">Our process uses basic elements of cooking- heating, cooling, pressure and mixing- to give the protein from plants a taste and texture that’s just like meat. The result? Uncompromisingly delicious plant-based burgers, sausage, and beef, no sacrifice required.</p>
-                <div class="row mt-5 d-flex justify-content-between">
-                    <div class="col">
-                        <img class="third" src="assets/Salad.jpg"/>
-                    </div>
-                    <div class="col">
-                        <img class="third" src="assets/Sauce.jpg"/>
-                    </div>
-                    <div class="col">
-                        <img class="third" src="assets/Salmon.jpg"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0  d-flex justify-content-center height bg-light align-items-center">
-            <div class="container-fluid w-75">
-                <div class="row w-100 mx-auto">
-                    <div class="col-6 align-self-center">
-                        <span class="badge badge-pill badge-warning">NEW</span>
-                        <p class="subTitle text-left">Let’s Have a Pizza Party!</p>
-                        <p class="text-left text-muted">Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature.</p>
-                        <button id="signUp" class="btn px-4 py-2 text-light">Find out more</button>
-                    </div>
-                    <div id="pizzaCont" class="col-6 d-flex">
-                        <div class="row ml-5">
-                            <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
-                                <img src="assets/Pepperoni-removebg-preview 1.png">
-                            </div>
-                            <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
-                                <img src="assets/Pepperoni-removebg-preview 3.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
-                                <img src="assets/Pepperoni-removebg-preview 2.png">
-                            </div>
-                            <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
-                                <img src="assets/Pepperoni-removebg-preview 4.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0  d-flex useful justify-content-center align-items-center">
-            <div class="usefulCont">
-                <p class="subTitle text-center">Useful Informations</p>
-                <div class="row mt-5 d-flex justify-content-between">
-                    <div class="col text-center font-weight-bold">
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                    </div>
-                    <div class="col text-center font-weight-bold">
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                    </div>
-                    <div class="col text-center font-weight-bold">
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                        <u><p>Description lists</p></u>
-                        <u><p>Euismod</p></u>
-                        <u><p>Malesuada porta</p></u>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="row m-0 d-flex align-items-between justify-content-center">
-                <div class="row w-75 d-flex mt-auto">
-                    <div class="col text-left justify-content-center">
-                        <div class="row ml-1">
-                            <img id="brandLogo" src="assets/BrandLogo.svg"/>
-                            <div class="ml-2" id="brandName"></div>
-                        </div>
-                        <p class="text-light font-weight-light mt-3">There are many variations of passages Lorem Ipsum available, but the majority is have suffered alteration.</p>
-                        <p class="font-weight-bold text-light mt-4">Business Hour</p>
-                        <p class="text-light font-weight-light mt-3">Monday - Friday 10:00am - 06:00pm</p>
-                    </div>
-                    <div class="col-3 text-left font-weight-light justify-content-between text-light">
-                        <p class="font-weight-bold mb-4 footerTitle">Important Links</p>
-                        <div class="row">
-                            <div class="col-5">
-                                >  Our Services <br>
-                                >  Privacy <br>
-                                >  Contacts <br>
-                                >  Meet Our Team <br>
-                                >  Help Desk <br>
-                            </div>
-                            <div class="col-5 ml-auto">
-                                >  Our Services <br>
-                                >  Privacy <br>
-                                >  Contacts <br>
-                                >  Meet Our Team <br>
-                                >  Help Desk <br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col ml-5 p-0 text-center font-weight-bold">
-                        <p class="font-weight-bold mb-4 footerTitle text-left p-0">Follow Instagram</p>
-                        <div id="instagramCont" class="row ml-1">
-                            <img class="m-1" src="assets/sven-brandsma-GZ5cKOgeIB0-unsplash 1.png">
-                            <img class="m-1" src="assets/sidekix-media-WOCpFXVey2w-unsplash 1.png">
-                            <img class="m-1" src="assets/neonbrand-Wp7t4cWN-68-unsplash 2.png">
-                            <img class="m-1" src="assets/naomi-hebert-MP0bgaS_d1c-unsplash 1.png">
-                            <img class="m-1" src="assets/francesca-tosolini-qnSTxcs0EEs-unsplash 1.png">
-                            <img class="m-1" src="assets/bathroom-1770213_1920 2.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="row w-75 align-self-end align-items-end">
-                    <div class="col">
-                        <hr class="border border-muted w-100 mt-5">
-                        <p class="text-light text-center font-weight-light align-self-end">All Right Reserved GrillBox 2021</p>
-                    </div>
-                    
-                </div>
-        </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <div id="contact" class="row m-0 d-flex align-items-center bg-light">
+        <img class="pl-5" src="assets/Clock.svg"/>
+        <div class="pl-3">
+            <p class="font-weight-bold mb-0">OPEN HOURS</p>
+            <p class="font-weight-light my-0">10.30 - 23.00</p>
+        </div>
+        <img id="phone" class="pl-5" src="assets/Phone.svg"/>
+        <div class="pl-3">
+            <p class="font-weight-bold mb-0">PHONE</p>
+            <p class="font-weight-light my-0">+381 60 25125</p>
+        </div>
+        <div id="socialMedia" class="ml-auto">
+            <img class="socialIcon mr-4" src="assets/Facebook.svg">
+            <img class="socialIcon mr-4" src="assets/Instagram.svg">
+            <img class="socialIcon mr-4" src="assets/LinkedIn.svg">
+            <img class="socialIcon" src="assets/Twitter.svg">
+        </div>
+    </div>
+    <div class="row m-0 d-flex justify-content-center page-height page align-items-center">
+        <div class="container-flex px-0 py-5 w-75">
+            <span class="badge badge-pill badge-warning mb-3 px-2 py-1">WHY US?</span>
+            <p class="subTitle">Fresh and Hand-picked Ingredients</p>
+            <p class="text-muted">Our process uses basic elements of cooking- heating, cooling, pressure and mixing- to give the protein from plants a taste and texture that’s just like meat. The result? Uncompromisingly delicious plant-based burgers, sausage, and beef, no sacrifice required.</p>
+            <div class="row mt-5 d-inline d-xl-flex justify-content-between">
+                <div class="col d-flex justify-content-center justify-content-xl-start mb-5 mb-xl-0">
+                    <img class="third" src="assets/Salad.jpg"/>
+                </div>
+                <div class="col d-flex justify-content-center justify-content-xl-start  mb-5 mb-xl-0">
+                    <img class="third" src="assets/Sauce.jpg"/>
+                </div>
+                <div class="col d-flex justify-content-center justify-content-xl-start">
+                    <img class="third" src="assets/Salmon.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0 d-flex justify-content-center page-height bg-light align-items-center">
+        <div class="container-fluid px-0 py-5 w-75 m-auto">
+            <div class="row d-inline d-xl-flex w-100 mx-auto">
+                <div class="col-xl-6 align-self-center">
+                    <span class="badge badge-pill badge-warning mb-3 px-2 py-1">NEW</span>
+                    <p class="subTitle text-left">Let’s Have a Pizza Party!</p>
+                    <p class="text-left text-muted">Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature.</p>
+                    <button id="signUp" class="btn btn-theme rounded-9 px-4 py-2 text-light">Find out more</button>
+                </div>
+                <div id="pizzaCont" class="col-xl-6 d-flex justify-content-center">
+                    <div class="row mb-5">
+                        <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
+                            <img class="img-fluid" src="assets/Pepperoni-removebg-preview 1.png">
+                        </div>
+                        <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
+                            <img class="img-fluid" src="assets/Pepperoni-removebg-preview 4.png">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="pizzas ml-1 d-flex ml-1 align-self-end align-items-center justify-content-center">
+                            <img class="img-fluid" src="assets/Pepperoni-removebg-preview 2.png">
+                        </div>
+                        <div class="pizzas d-flex ml-1 align-self-start align-items-center justify-content-center">
+                            <img class="img-fluid" src="assets/Pepperoni-removebg-preview 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="useful" class="row bg-white m-0 d-flex justify-content-center align-items-center">
+        <div class="container-flex px-0 py-5 w-50">
+            <p class="subTitle text-center">Useful Informations</p>
+            <div class="row d-inline d-lg-flex justify-content-between">
+                <div class="col mt-5 text-center font-weight-bold">
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                </div>
+                <div class="col mt-5 text-center font-weight-bold">
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                </div>
+                <div class="col mt-5 text-center font-weight-bold">
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                    <u><p>Description lists</p></u>
+                    <u><p>Euismod</p></u>
+                    <u><p>Malesuada porta</p></u>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row m-0 d-flex align-items-between justify-content-center">
+        <div class="row w-75 d-inline d-xl-flex mt-auto px-0 py-5">
+            <div class="col mb-5 mb-xl-0 text-left justify-content-center">
+                <div class="row ml-1">
+                    <img id="brandLogo" src="assets/BrandLogo.svg"/>
+                    <div class="ml-2" id="brandName"></div>
+                </div>
+                <p class="text-light font-weight-light mt-3">There are many variations of passages Lorem Ipsum available, but the majority is have suffered alteration.</p>
+                <p class="bolder text-light mt-4">Business Hour</p>
+                <p class="text-light font-weight-light mt-3">Monday - Friday 10:00am - 06:00pm</p>
+            </div>
+            <div class="col-xl-3 mb-5 mb-xl-0 text-left font-weight-light justify-content-between text-light">
+                <p class="mb-4 footer-title">Important Links</p>
+                <div class="row">
+                    <div class="col-6 important-links">
+                        >&nbsp;&nbsp;Our Services<br>
+                        >&nbsp;&nbsp;Privacy<br>
+                        >&nbsp;&nbsp;Contacts<br>
+                        >&nbsp;&nbsp;Meet Our Team<br>
+                        >&nbsp;&nbsp;Help Desk<br>
+                    </div>
+                    <div class="col-6 important-links ml-auto">
+                        >&nbsp;&nbsp;Our Services<br>
+                        >&nbsp;&nbsp;Privacy<br>
+                        >&nbsp;&nbsp;Contacts<br>
+                        >&nbsp;&nbsp;Meet Our Team<br>
+                        >&nbsp;&nbsp;Help Desk<br>
+                    </div>
+                </div>
+            </div>
+            <div class="col ml-5 p-0 text-center font-weight-bold m-auto">
+                <p class="mb-4 footer-title text-center text-xl-left p-0">Follow Instagram</p>
+                <div id="instagramCont" class="row ml-xl-1 m-auto">
+                    <img class="m-1" src="assets/sven-brandsma-GZ5cKOgeIB0-unsplash 1.png">
+                    <img class="m-1" src="assets/sidekix-media-WOCpFXVey2w-unsplash 1.png">
+                    <img class="m-1" src="assets/neonbrand-Wp7t4cWN-68-unsplash 2.png">
+                    <img class="m-1" src="assets/naomi-hebert-MP0bgaS_d1c-unsplash 1.png">
+                    <img class="m-1" src="assets/francesca-tosolini-qnSTxcs0EEs-unsplash 1.png">
+                    <img class="m-1" src="assets/bathroom-1770213_1920 2.png">
+                </div>
+            </div>
+        </div>
+        <div class="row w-75 align-self-end align-items-end">
+            <div class="col">
+                <hr class="border border-secondary w-100 mt-5">
+                <p class="text-light text-center font-weight-light align-self-end">All Right Reserved GrillBox 2021</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
