@@ -82,20 +82,16 @@ label {
     top: calc(50vh - 15vh);
     z-index: 3;
     width: 40vw;
-    height: 320px;
+    min-height: 320px;
     margin: auto;
 }
 
 #bigImgCont {
     width: 50%;
-    min-height: 612px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
     position: absolute;
+    top: 108px;
     left: calc(50vw - 25%);
-    top: calc(50vh - 306px);
-    background-image: url("../assets/BigImg.png");
     z-index: 3;
 }
 
@@ -117,6 +113,10 @@ label {
     top: -16px;
     width: 30px;
     height: 30px;
+    background-image: url("../assets/x\ \(Stroke\).svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
 }
 
 #quit2 {
